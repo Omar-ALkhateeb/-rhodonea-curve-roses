@@ -10,7 +10,7 @@ var flowers = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  for(var i=0;i<42;i++){
+  for(var i=0;i<22;i++){
     let y = random(-400, -20)
     let x = random(0, width)
     flowers[i] = new flower(x, y)
@@ -23,7 +23,7 @@ function draw() {
   for(var i=flowers.length-1;i>0;i--){
     flowers[i].show()
     flowers[i].update()
-    if(flowers[i].y > width+80){
+    if(flowers[i].y > width+100){
       flowers[i].y = random(-200, -20)
     }
   }
