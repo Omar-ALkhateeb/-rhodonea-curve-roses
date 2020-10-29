@@ -10,7 +10,7 @@ var flowers = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  for(var i=0;i<24;i++){
+  for(var i=0;i<34;i++){
     let y = random(-400, -20)
     let x = random(0, width)
     flowers[i] = new flower(x, y)
